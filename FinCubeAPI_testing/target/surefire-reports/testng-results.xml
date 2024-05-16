@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-16T09:02:37 UZT" name="PetSute" finished-at="2024-05-16T09:02:44 UZT" duration-ms="6357">
+    <groups>
+    </groups>
+    <test started-at="2024-05-16T09:02:37 UZT" name="PetTests" finished-at="2024-05-16T09:02:44 UZT" duration-ms="6357">
+      <class name="tests.UserTests2">
+        <test-method is-config="true" signature="setupDate()[pri:0, instance:tests.UserTests2@6a2b953e]" started-at="2024-05-16T09:02:37 UZT" name="setupDate" finished-at="2024-05-16T09:02:38 UZT" duration-ms="512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDate -->
+        <test-method signature="testPOSTuser()[pri:1, instance:tests.UserTests2@6a2b953e]" started-at="2024-05-16T09:02:38 UZT" name="testPOSTuser" finished-at="2024-05-16T09:02:40 UZT" duration-ms="2078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPOSTuser -->
+        <test-method signature="testGetUserByName()[pri:2, instance:tests.UserTests2@6a2b953e]" started-at="2024-05-16T09:02:40 UZT" name="testGetUserByName" finished-at="2024-05-16T09:02:41 UZT" duration-ms="959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetUserByName -->
+        <test-method signature="updateUserByName()[pri:3, instance:tests.UserTests2@6a2b953e]" started-at="2024-05-16T09:02:41 UZT" name="updateUserByName" finished-at="2024-05-16T09:02:43 UZT" duration-ms="1881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserByName -->
+        <test-method signature="testDeleteUserByName()[pri:4, instance:tests.UserTests2@6a2b953e]" started-at="2024-05-16T09:02:43 UZT" name="testDeleteUserByName" finished-at="2024-05-16T09:02:44 UZT" duration-ms="904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteUserByName -->
+      </class> <!-- tests.UserTests2 -->
+    </test> <!-- PetTests -->
+  </suite> <!-- PetSute -->
+</testng-results>
