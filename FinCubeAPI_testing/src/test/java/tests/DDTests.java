@@ -1,3 +1,4 @@
+/*
 package tests;
 
 import endpoints.UserEndPoints;
@@ -44,3 +45,4 @@ public class DDTests {
     }
 
 }
+*/

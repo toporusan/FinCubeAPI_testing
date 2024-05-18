@@ -1,3 +1,4 @@
+/*
 package endpoints;
 
 import io.restassured.response.Response;
@@ -75,3 +76,4 @@ public class UserEndPoints2 {
     }
 
 }
+*/

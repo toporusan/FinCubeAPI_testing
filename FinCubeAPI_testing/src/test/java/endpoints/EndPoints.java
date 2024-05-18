@@ -1,29 +1,46 @@
 package endpoints;
 
 import io.restassured.response.Response;
-import payload_POJO.User;
+import payload_POJO.OTP_veriy.Otp_verify;
 
 import static endpoints.Routs.*;
 import static io.restassured.RestAssured.given;
 
 
-//UserEndPoints.java
-// Perform to Create,Read,Update and Delete the user API
-public class UserEndPoints {
+
+public class EndPoints {
+
+
+
+
+
+
+
+
+
+
 
     // POST
-    public static Response createUSer(User payload) {
+    public static Response otp_verify(Otp_verify phone) {
         Response response = given()
-                .accept("application/json")
+                .accept("*/*")
                 .contentType("application/json")
-                .body(payload)
+                .header("Client-Version", "1.0.0")   // Укажите актуальную версию клиента
+                .header("Platform", "IOS")     // Укажите актуальную платформу (например, Android, iOS)
+                .header("Device-Id", "B17A9245-D53E-4500-AD54-7B4BB95F4404")
+                .header("Accept-Language", "ru")
+                .body(phone)
                 .when()
-                .post(post_url);
-
+                .post(otp_verify);
         return response;
     }
 
-    // GET
+
+
+
+
+
+/*    // GET
     public static Response readUser(String userName) {
         Response response = given()
                 .accept("application/json")
@@ -55,6 +72,6 @@ public class UserEndPoints {
                 .delete(delete_url);
 
         return response;
-    }
+    }*/
 
 }
