@@ -21,7 +21,6 @@ public class Auth_Test {
     public Data phone;
 
 
-
     @BeforeClass
     public void setupDate() {
         /*
@@ -30,24 +29,20 @@ public class Auth_Test {
 
         phoneNumb = new Otp_verify();
         phone = new Data();
-        phone.setPhone(getProperty("Profile_prop.properties","phone"));
+        phone.setPhone(getProperty("Profile_prop.properties", "phone"));
         phoneNumb.setData(phone);
 
     }
 
 
     @Test(priority = 1)
-    public void otp_Verify_test() {
-       // logger.info("*** Creating user ***");
+    public void authorization() {
+        // logger.info("*** Authorization ***");
 
-        String a = System.getenv("MY_VAR");
-        System.out.println(a);
-
-        /*Response response = EndPoints.otp_verify(phoneNumb);
+        Response response = EndPoints.otp_verify(phoneNumb);
         response.then().log().all();
-
-        Assert.assertEquals(response.getStatusCode(), 200);*/
-       // logger.info("*** User is created ***");
+        Assert.assertEquals(response.getStatusCode(), 200);
+        // logger.info("*** User is created ***");
 
     }
 

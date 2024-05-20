@@ -1,5 +1,0 @@
-# Created at 2024-05-16T09:02:37.409
-Boot Manifest-JAR contains absolute paths in classpath 'D:\0.Practice\FinCubeAPI_testing\FinCubeAPI_testing\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-
