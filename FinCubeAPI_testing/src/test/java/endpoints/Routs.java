@@ -1,9 +1,9 @@
 package endpoints;
 
-import utilities.PropertiesFileParser;
+import utilities.Properties_pars;
 
 public class Routs {
-    public static String base_url = PropertiesFileParser.getProperty("Profile_prop.properties","URL");
+    public static String base_url = Properties_pars.getProperty("Profile_prop.properties","URL");
 
 
     public static String otp_verify = base_url + "/api/otp/verify";

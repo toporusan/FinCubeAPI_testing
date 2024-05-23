@@ -8,11 +8,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import payload_POJO.OTP_veriy.Data;
 import payload_POJO.OTP_veriy.Otp_verify;
-import utilities.ScannerForConsoleInput;
 
 import java.util.Scanner;
 
-import static utilities.PropertiesFileParser.*;
+import static utilities.Properties_pars.*;
 
 public class Auth_Test {
     public Logger logger;
@@ -43,6 +42,8 @@ public class Auth_Test {
         response.then().log().all();
         Assert.assertEquals(response.getStatusCode(), 200);
         // logger.info("*** User is created ***");
+
+
 
     }
 

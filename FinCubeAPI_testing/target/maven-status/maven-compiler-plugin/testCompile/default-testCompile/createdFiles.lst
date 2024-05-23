@@ -1,10 +1,5 @@
 payload_POJO\User.class
-tests\UserTests.class
-endpoints\UserEndPoints.class
-tests\UserTests2.class
 endpoints\Routs.class
 utilities\XLUtility.class
 utilities\ExtentReportManager.class
-tests\DDTests.class
 utilities\DataProviders.class
-endpoints\UserEndPoints2.class
