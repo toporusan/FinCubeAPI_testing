@@ -23,6 +23,10 @@ public class Routs {
 
 
 
+    public static String testURL = "http://localhost:3000/data";
+
+
+
 
 
 

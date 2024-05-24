@@ -43,8 +43,8 @@ public class ScannerForConsoleInput {
         otpVerify.setOtpId(Properties_pars.getProperty("Profile_prop.properties", "otp"));
         payload_POJO.OTP_confirm.Otp_confirm confirm = new payload_POJO.OTP_confirm.Otp_confirm();
 
-        Response response2 = EndPoints.otp_confirm();
-
+        /*Response response2 = EndPoints.otp_confirm();
+*/
 
         Assert.assertEquals(response.getStatusCode(), 200);
 

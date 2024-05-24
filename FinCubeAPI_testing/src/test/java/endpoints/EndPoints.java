@@ -1,6 +1,7 @@
 package endpoints;
 
 import io.restassured.response.Response;
+import org.json.JSONObject;
 import payload_POJO.OTP_confirm.Otp_confirm;
 import payload_POJO.OTP_veriy.Otp_verify;
 
@@ -48,6 +49,19 @@ public class EndPoints {
                 .body(body)
                 .when()
                 .post(otp_verify);
+        return response;
+    }
+
+
+
+    // POST
+    public static Response testURLPOST(JSONObject object) {
+        Response response = given()
+                .accept("*/*")
+                .contentType("application/json")
+                .body(object)
+                .when()
+                .post(testURL);
         return response;
     }
 
