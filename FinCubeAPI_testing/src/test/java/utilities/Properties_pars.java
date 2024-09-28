@@ -1,18 +1,13 @@
 package utilities;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Properties;
-import java.util.ResourceBundle;
-import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-public class PropertiesFileParser {
+public class Properties_pars {
 
     private static final ReentrantLock lock = new ReentrantLock();
     // Оба метода используют блокировку ReentrantLock (lock)
@@ -23,7 +18,7 @@ public class PropertiesFileParser {
         lock.lock();
         try {
             String filePath = System.getProperty("user.dir") + "/src/test/resources/" + fileName;
-            Properties properties = new Properties();
+            java.util.Properties properties = new java.util.Properties();
 
             if (Files.notExists(Paths.get(filePath))) {
                 System.out.println("Файл не существует: " + filePath);
@@ -50,7 +45,7 @@ public class PropertiesFileParser {
         lock.lock();
         try {
             String filePath = System.getProperty("user.dir") + "/src/test/resources/" + fileName;
-            Properties properties = new Properties();
+            java.util.Properties properties = new java.util.Properties();
 
             if (Files.notExists(Paths.get(filePath))) {
                 System.out.println("Файл не существует: " + filePath);

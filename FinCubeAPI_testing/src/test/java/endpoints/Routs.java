@@ -1,7 +1,9 @@
 package endpoints;
 
+import utilities.Properties_pars;
+
 public class Routs {
-    public static String base_url = "https://mobapi.apexbank.uz";
+    public static String base_url = Properties_pars.getProperty("Profile_prop.properties","URL");
 
 
     public static String otp_verify = base_url + "/api/otp/verify";
@@ -18,6 +20,10 @@ public class Routs {
     public static String transfer_info = base_url + "/api/transfer/info";
     public static String transfer = base_url + "/api/transfer";
     public static String transfer_confirm = base_url + "/api/transfer/confirm";
+
+
+
+    public static String testURL = "http://localhost:3000/data";
 
 
 
